@@ -1,0 +1,23 @@
+.main-features--container{
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+gap: 5px;
+width: 930px;
+margin: 0 auto;
+}
+
+.permissions-container{  
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 5px;
+    top: 150px;
+    width: 100%;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    background-color: #ffffff;
+}
