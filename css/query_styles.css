@@ -2,9 +2,18 @@
 display: flex;
 flex-wrap: wrap;
 flex-direction: row;
-gap: 5px;
+justify-content: center;
+gap: 50px;
 width: 930px;
 margin: 0 auto;
+}
+
+.main-permissions{  
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 700px;
+    background-color: #ffffff;
 }
 
 .permissions-container{  
@@ -12,12 +21,12 @@ margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
     gap: 5px;
     top: 150px;
+    left: 0;
     width: 100%;
-    width: 100%;
-    height: auto;
+    height: 330px;
     margin: 0 auto;
-    padding-bottom: 100px;
     background-color: #ffffff;
 }
