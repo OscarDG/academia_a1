@@ -3,6 +3,8 @@ $lightRed: #BF3131;
 $beige: #EAD196;
 $lightBeige: #F8F9F9;
 $black: #1C2833;
+$main-font: 'Nunito', sans-serif;
+$second-font: 'Poppins', sans-serif;
 
 *{
     box-sizing: border-box;
@@ -11,8 +13,9 @@ $black: #1C2833;
 }
 
 html{
+    width: 100%;
     font-size: 62.5%;
-    font-family: 'Poppins', sans-serif;
+    font-family: $main-font;
 }
 
 header{
@@ -22,7 +25,7 @@ header{
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-    min-width: 750px;
+    min-width: 768px;
     height: 90px;
     background: $mainRed;
     background: -webkit-linear-gradient(38deg, #7d0a0a 0%, #000000 100%);
@@ -86,8 +89,9 @@ header .header-logo{
 .main-hero{
     position: relative;
     width: 100%;
-    min-width: 750px;
+    min-width: 768px;
     height: 70vh;
+    padding: 0;
     background-image: url("../assets/herocar.jpg");
     background-position: center;
     background-size: cover;
@@ -96,12 +100,13 @@ header .header-logo{
 }
 
 .main-hero h2{
+    width: 100%;
     position: absolute;
-    top: 300px;
-    left: 250px;
+    top: 200px;
+    margin: 0 auto;
     font-size: 5rem;
     line-height: 1rem;
-    font-family: 'Nunito', sans-serif;
+    font-family: $main-font;
     color: #ffffff;
 }
 
@@ -124,7 +129,7 @@ header .header-logo{
     border: 1px solid  transparent;
     border-radius: 5px;
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: $second-font;
     font-size: 1.8rem;
     color: #ffffff;
     text-align: center;
@@ -132,7 +137,7 @@ header .header-logo{
 
 .hero-button a:visited{
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: $second-font;
     font-size: 1.2rem;
     color: #ffffff;
     text-align: center;
@@ -152,8 +157,8 @@ header .header-logo{
 .main-features{
     position: relative;
     width: 100%;
+    min-width: 768px;
     height: auto;
-    min-width: 750px;
     background-color: #ffffff;
     text-align: center;
     padding-bottom: 50px;
@@ -163,7 +168,7 @@ header .header-logo{
     width: 90%;
     font-size: 2.5rem;
     font-weight: 500;
-    font-family: 'Nunito', sans-serif;
+    font-family: $main-font;
     font-size: 2.5rem;
     font-weight: bold ;
     text-align: center;
@@ -174,9 +179,9 @@ header .header-logo{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
     gap: 20px;
-    width: 750px;
-    min-width: 750px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -243,7 +248,7 @@ header .header-logo{
     padding-bottom: 25px;
     font-size: 1.8rem;
     line-height: 1.5rem;
-    font-family: "Nunito", sans-serif;
+    font-family: $second-font;
     color: $lightRed;
 }
 
@@ -257,7 +262,7 @@ header .header-logo{
 .main-vehicules{
     position: relative;
     width: 100%;
-    min-width: 750px;
+    min-width: 768px;
     height: auto;
     background-color: #F8F9F9;
 }
@@ -272,7 +277,7 @@ header .header-logo{
 }
 
 .vehicules-title h2{
-    font-family: 'Nunito', sans-serif;
+    font-family: $main-font;
     font-size: 2.5rem;
     font-weight: bold;
 }
@@ -321,7 +326,7 @@ header .header-logo{
     min-width: 150px;
     padding-top: 10px;
     font-size: 1.8rem;
-    font-family: 'Nunito', sans-serif;
+    font-family: $main-font;
     line-height: 1.5rem;
     margin: 0 auto;
 }
@@ -333,7 +338,7 @@ header .header-logo{
     min-height: 50px;
     padding-top: 15px;
     font-size: 1.3rem;
-    font-family: 'Nunito', sans-serif;
+    font-family: $second-font;
     line-height: 1.8rem;
     margin: 0 auto;
 }
@@ -343,6 +348,7 @@ header .header-logo{
     display: flex;
     justify-content: center;
     width: 100%;
+    min-width: 768px;
     height: 500px;
     background: #a92a2a;
     background: -webkit-linear-gradient(0deg, #a92a2a 0%, #000000 100%);
@@ -355,7 +361,7 @@ header .header-logo{
     width: 500px;
     height: 150px;
     margin: 0 auto;
-    font-family: 'Nunito', sans-serif;
+    font-family: $main-font;
     font-size: 5rem;
     font-weight: bold;
     color: #ffffff;
@@ -375,7 +381,7 @@ header .header-logo{
     display: flex;
     justify-content: center;
     width: 100%;
-    min-width: 750px;
+    min-width: 768px;
     height: 1200px;
     background-color: #ffffff;
 }
@@ -388,7 +394,7 @@ header .header-logo{
 }
 
 .main-permissions--title h2{
-    font-family: 'Nunito', sans-serif;
+    font-family: $main-font;
     font-size: 2.5rem;
     font-weight: bold;
     color: #000000;
@@ -442,7 +448,7 @@ header .header-logo{
 .description-card--title{
     font-size: 2.5rem;
     line-height: 2.5rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: $main-font;
     font-weight: bold;
     color: $black;
     margin-bottom: 20px;
@@ -450,11 +456,11 @@ header .header-logo{
 }
 
 .description-card--body{
-    font-size: 2rem;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
+    font-size: 1.8rem;
+    font-family: $second-font;
+    font-weight: 300;
     color: #000000;
-    line-height: 1.9rem;
+    line-height: 2.3rem;
     margin-left: 40px;
 }
 
@@ -465,8 +471,8 @@ header .header-logo{
     position: absolute;
     bottom: 15px;
     left: 40px;
-    font-family: 'Nunito', sans-serif;
-    font-size: 1.8rem;
+    font-family: $second-font;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -490,8 +496,8 @@ header .header-logo{
 .main-reviews{
     position: relative;
     width: 100%;
+    min-width: 768px;
     height: 500px;
-    min-width: 750px;
     background-color: #F8F9F9;
 }
 
@@ -500,16 +506,229 @@ header .header-logo{
     height: 80px;
     margin: 50px auto 0;
     text-align: center;
-    padding: 10px 5px;
+    padding: 50px 5px;
 }
 
 .reviews-heading span{
     font-size: 3rem;
-    font-family: 'Nunito', sans-serif;
+    font-family: $main-font;
+    font-weight: bold;
 }
 
 .reviews-heading h2{
     font-size: 2.5rem;
-    font-family: 'Nunito', sans-serif;
-    font-weight: bold;
+    font-family: $main-font;
+    font-weight: 500;
 }
+
+.reviews-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.review {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: 260px;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    border-radius: 6px;
+    background-color: #ffffff;
+  }
+
+  .review-container-google{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 15px;
+    right: 15px;
+    background-image: url('../assets/google-color.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+ }
+
+  .review-img{
+    width: 55px;
+    height: 55px;
+    margin: 15px auto;
+    background-color: #CCD1D1;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .review-img img{
+    width: 55px;
+    height: 55px;
+  }
+
+  .review-score{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 5px;
+    width: 150px;
+    height: 30px;
+    margin: 10px auto;
+  }
+
+  .review-score span{
+    width: 20px;
+    height: 20px;
+    background-image: url('../assets/yellow_star.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .review p{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-family: $second-font;
+    font-size: 1.3rem;
+    height: 60px;
+  }
+
+  .review-user{
+    position: absolute;
+    bottom: 10px;
+    left: calc(50% - 50px);
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .review-name{
+    width: 100px;
+    height: auto;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .review-date{
+    width: 100px;
+    height: auto;
+    color: #AEB6BF;
+  }
+
+  .footer-container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 768px;
+    height: 200px;
+    background-color: #000000;
+  }
+
+  .footer-contact{
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100px;
+    padding: 10px;
+    margin: 40px 5px;
+    text-align: center;
+    font-family: $second-font;
+    font-size: 1rem;
+    font-weight: 200;
+    color: #ffffff;
+  }
+
+  .contact-address{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+
+  .contact-phone{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+
+  .contact-email{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .contact-address span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    background-image: url('../assets/address-white.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .contact-phone span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    background-image: url('../assets/phone-white.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .contact-email span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    background-image: url('../assets/email-white.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .footer-social{
+    position: absolute;
+    top: 20px;
+    right: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    margin: 40px 5px;
+  }
+
+  .footer-social--logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    width: 150px;
+    height: 50px;
+  }
+
+  .footer--facebook{
+    width: 70px;
+    height: 70px;
+  }
+
+  .footer--instagram{
+    width: 50px;
+    height: 50px;
+  }
+
