@@ -63,6 +63,27 @@ margin: 0 auto;
     background: linear-gradient(0deg, #a92a2a 0%, #000000 100%);
 }
 
+.reviews-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.review {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: 270px;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    border-radius: 6px;
+    background-color: #ffffff;
+  }
+
 .footer-container{
     position: relative;
     display: flex;

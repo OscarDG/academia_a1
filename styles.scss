@@ -524,16 +524,20 @@ header .header-logo{
 .reviews-container{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
     gap: 15px;
     margin-top: 50px;
+    width: 100%;
 }
 
 .review {
     position: relative;
     display: inline-block;
-    width: 300px;
-    height: 260px;
+    width: 400px;
+    height: 300px;
     border: 1px solid #ddd;
     padding: 1rem;
     margin-bottom: 1rem;
@@ -542,7 +546,7 @@ header .header-logo{
     background-color: #ffffff;
   }
 
-  .review-container-google{
+  .review-container--google{
     position: absolute;
     width: 20px;
     height: 20px;
@@ -592,6 +596,7 @@ header .header-logo{
     margin-bottom: 10px;
     font-family: $second-font;
     font-size: 1.3rem;
+    width: 250px;
     height: 60px;
   }
 
@@ -621,10 +626,8 @@ header .header-logo{
   .footer-container{
     position: relative;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    align-content: stretch;
     width: 100%;
     min-width: 768px;
     height: 200px;
@@ -701,7 +704,7 @@ header .header-logo{
   .footer-social{
     position: absolute;
     top: 20px;
-    right: 200px;
+    right: 100px;
     display: flex;
     flex-direction: row;
     justify-content: center;
