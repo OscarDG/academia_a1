@@ -3,6 +3,8 @@ $lightRed: #BF3131;
 $beige: #EAD196;
 $lightBeige: #F8F9F9;
 $black: #1C2833;
+$main-font: 'Nunito', sans-serif;
+$second-font: 'Poppins', sans-serif;
 
 *{
     box-sizing: border-box;
@@ -11,8 +13,9 @@ $black: #1C2833;
 }
 
 html{
+    width: 100%;
     font-size: 62.5%;
-    font-family: 'Poppins', sans-serif;
+    font-family: $main-font;
 }
 
 header{
@@ -22,9 +25,11 @@ header{
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-    min-width: 320px;
+    min-width: 768px;
     height: 90px;
-    background-color: $mainRed;
+    background: $mainRed;
+    background: -webkit-linear-gradient(38deg, #7d0a0a 0%, #000000 100%);
+    background: linear-gradient(38deg, #7d0a0a 0%, #000000 100%);
     box-shadow: 0 2px 8px 0 $black;
     margin: 0px;
 }
@@ -84,8 +89,9 @@ header .header-logo{
 .main-hero{
     position: relative;
     width: 100%;
-    min-width: 320px;
+    min-width: 768px;
     height: 70vh;
+    padding: 0;
     background-image: url("../assets/herocar.jpg");
     background-position: center;
     background-size: cover;
@@ -94,9 +100,13 @@ header .header-logo{
 }
 
 .main-hero h2{
-    padding-top: 100px;
-    font-size: 2.5rem;
+    width: 100%;
+    position: absolute;
+    top: 200px;
+    margin: 0 auto;
+    font-size: 5rem;
     line-height: 1rem;
+    font-family: $main-font;
     color: #ffffff;
 }
 
@@ -119,15 +129,15 @@ header .header-logo{
     border: 1px solid  transparent;
     border-radius: 5px;
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;
+    font-family: $second-font;
+    font-size: 1.8rem;
     color: #ffffff;
     text-align: center;
 }
 
 .hero-button a:visited{
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: $second-font;
     font-size: 1.2rem;
     color: #ffffff;
     text-align: center;
@@ -147,8 +157,8 @@ header .header-logo{
 .main-features{
     position: relative;
     width: 100%;
+    min-width: 768px;
     height: auto;
-    min-width: 230px;
     background-color: #ffffff;
     text-align: center;
     padding-bottom: 50px;
@@ -158,7 +168,7 @@ header .header-logo{
     width: 90%;
     font-size: 2.5rem;
     font-weight: 500;
-    font-family: 'Nunito', sans-serif;
+    font-family: $main-font;
     font-size: 2.5rem;
     font-weight: bold ;
     text-align: center;
@@ -166,7 +176,11 @@ header .header-logo{
 }
 
 .main-features--container{
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
     width: 100%;
     margin: 0 auto;
 }
@@ -176,8 +190,8 @@ header .header-logo{
     width: 80%;
     min-width: 230px;
     max-width: 300px;
-    min-height: 150px;
-    margin: 20px auto 10px;
+    min-height: 190px;
+    margin: 20px 5px 10px;
     padding: 15px;
     background-color: $lightBeige;
     border-radius: 5px;
@@ -230,15 +244,16 @@ header .header-logo{
 }
 
 .features-card--title{
-    padding-bottom: 15px;
+    margin-top: 5px;
+    padding-bottom: 25px;
     font-size: 1.8rem;
     line-height: 1.5rem;
-    font-family: "Nunito", sans-serif;
+    font-family: $second-font;
     color: $lightRed;
 }
 
 .features-card--body{
-    width: 70%;
+    width: 90%;
     font-size: 1.3rem;
     line-height: 1.5rem;
     margin: 0 auto
@@ -247,6 +262,7 @@ header .header-logo{
 .main-vehicules{
     position: relative;
     width: 100%;
+    min-width: 768px;
     height: auto;
     background-color: #F8F9F9;
 }
@@ -261,7 +277,7 @@ header .header-logo{
 }
 
 .vehicules-title h2{
-    font-family: 'Nunito', sans-serif;
+    font-family: $main-font;
     font-size: 2.5rem;
     font-weight: bold;
 }
@@ -310,7 +326,7 @@ header .header-logo{
     min-width: 150px;
     padding-top: 10px;
     font-size: 1.8rem;
-    font-family: 'Nunito', sans-serif;
+    font-family: $main-font;
     line-height: 1.5rem;
     margin: 0 auto;
 }
@@ -322,244 +338,141 @@ header .header-logo{
     min-height: 50px;
     padding-top: 15px;
     font-size: 1.3rem;
-    font-family: 'Nunito', sans-serif;
+    font-family: $second-font;
     line-height: 1.8rem;
     margin: 0 auto;
 }
 
+.mid-hero{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-width: 768px;
+    height: 500px;
+    background: #a92a2a;
+    background: -webkit-linear-gradient(0deg, #a92a2a 0%, #000000 100%);
+    background: linear-gradient(0deg, #a92a2a 0%, #000000 100%);
+}
+
+.mid-hero--title{
+    position: absolute;
+    top: 160px;
+    width: 500px;
+    height: 150px;
+    margin: 0 auto;
+    font-family: $main-font;
+    font-size: 5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    z-index: 2;
+}
+
+.mid-hero--image{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    opacity: 0.4;
+}
+
 .main-permissions{  
     position: relative;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     width: 100%;
-    height: auto;
+    min-width: 768px;
+    height: 1200px;
     background-color: #ffffff;
 }
 
 .main-permissions--title{
     width: 300px;
-    height: auto;
+    height: 50px;
     margin: 50px auto 0;
+    text-align: center;
 }
 
 .main-permissions--title h2{
-    font-family: 'Nunito', sans-serif;
-    font-size: 3rem;
+    font-family: $main-font;
+    font-size: 2.5rem;
     font-weight: bold;
     color: #000000;
     text-align: center;
 }
 
 .permissions-container{
-        display: inline-block;
         position: absolute;
-        top: 150px;
-        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 5px;
+        justify-content: center;
+        top: 120px;
+        width: 95%;
+        min-width: 500px;
         height: auto;
-        margin: 0 auto 50px;
-        padding-bottom: 100px;
+        margin: 0 auto;
         background-color: #ffffff;
     }
 
-.permissions-a2{
+.permissions-card{
     position: relative;
-    width: 350px;
-    height: 250px;
+    width: 280px;
+    height: 220px;
     border: solid 1px #7D0A0A;
     border-radius: 5px;
-    margin: 40px auto;
+    margin: 20px 50px;
     transition: all 0.8s ease-out;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     transition-property: background-color;
     transition-property: box-shadow;
 }
 
-.permissions-a2:hover{
+.permissions-card:hover{
     background-color: #f07575;
     box-shadow:
     0 0 20px 1px rgba(217, 88, 88, 0.7);
     color: white
 }
 
-.permissions-a2--description{
+.permissions-card--description{
     position: absolute;
     width: 90%;
     height: auto;
     margin: 0 auto;
-    top: 40px;
+    top: 35px;
     left: 0px;
 }
 
-.description-a2--title{
-    font-size: 3.5rem;
-    line-height: 1.5rem;
-    font-family: 'Poppins', sans-serif;
+.description-card--title{
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    font-family: $main-font;
     font-weight: bold;
     color: $black;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     margin-left: 40px;
 }
 
-.description-a2--body{
-    font-size: 2rem;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
+.description-card--body{
+    font-size: 1.8rem;
+    font-family: $second-font;
+    font-weight: 300;
     color: #000000;
-    line-height: 2.5rem;
+    line-height: 2.3rem;
     margin-left: 40px;
 }
-
-.permissions-b1{
-    position: relative;
-    width: 350px;
-    height: 250px;
-    border: solid 1px #7D0A0A;
-    border-radius: 5px;
-    margin: 40px auto;
-    transition: all 0.8s ease-out;
-    transition-property: background-color;
-    transition-property: box-shadow;
-}
-
-.permissions-b1:hover{
-    background-color: #f07575;
-    box-shadow:
-    0 0 20px 1px rgba(217, 88, 88, 0.7);
-    color: white
-}
-
-.permissions-b1--description{
-    position: absolute;
-    width: 90%;
-    height: auto;
-    margin: 0 auto;
-    top: 40px;
-    left: 0px;
-}
-
-.description-b1--title{
-    font-size: 3.5rem;
-    line-height: 1.5rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    color: $black;
-    margin-bottom: 50px;
-    margin-left: 40px;
-}
-
-.description-b1--body{
-    font-size: 2rem;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
-    color: #000000;
-    line-height: 2.5rem;
-    margin-left: 40px;
-}
-
-.permissions-c1{
-    position: relative;
-    width: 350px;
-    height: 250px;
-    border: solid 1px #7D0A0A;
-    border-radius: 5px;
-    margin: 40px auto;
-    transition: all 0.8s ease-out;
-    transition-property: background-color;
-    transition-property: box-shadow;
-}
-
-.permissions-c1:hover{
-    background-color: #f07575;
-    box-shadow:
-    0 0 20px 1px rgba(217, 88, 88, 0.7);
-    color: white
-}
-
-.permissions-c1--description{
-    position: absolute;
-    width: 90%;
-    height: auto;
-    margin: 0 auto;
-    top: 40px;
-    left: 0px;
-}
-
-.description-c1--title{
-    font-size: 3.5rem;
-    line-height: 1.5rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    color: $black;
-    margin-bottom: 50px;
-    margin-left: 40px;
-}
-
-.description-c1--body{
-    font-size: 2rem;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
-    color: #000000;
-    line-height: 2.5rem;
-    margin-left: 40px;
-}
-
-.permissions-renew{
-    position: relative;
-    width: 350px;
-    height: 250px;
-    border: solid 1px #7D0A0A;
-    border-radius: 5px;
-    margin: 40px auto;
-    transition: all 0.8s ease-out;
-    transition-property: background-color;
-    transition-property: box-shadow;
-}
-
-.permissions-renew:hover{
-    background-color: #f07575;
-    box-shadow:
-    0 0 20px 1px rgba(217, 88, 88, 0.7);
-    color: white
-}
-
-.permissions-renew--description{
-    position: absolute;
-    width: 90%;
-    height: auto;
-    margin: 0 auto;
-    top: 40px;
-    left: 0px;
-}
-
-.description-renew--title{
-    width: 90%;
-    height: 30px;
-    font-size: 3.5rem;
-    line-height: 3.5rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    color: $black;
-    margin-bottom: 55px;
-    margin-left: 40px;
-}
-
-.description-renew--body{
-    font-size: 2rem;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
-    color: #000000;
-    line-height: 2.5rem;
-    margin-left: 40px;
-}
-
 
 .permissions-more{
     position: relative;
     width: 200px;
     height: 20px;
     position: absolute;
-    bottom: 20px;
+    bottom: 15px;
     left: 40px;
-    font-family: 'Nunito', sans-serif;
-    font-size: 1.8rem;
+    font-family: $second-font;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -579,3 +492,246 @@ header .header-logo{
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+.main-reviews{
+    position: relative;
+    width: 100%;
+    min-width: 768px;
+    height: 500px;
+    background-color: #F8F9F9;
+}
+
+.reviews-heading{
+    width: 400px;
+    height: 80px;
+    margin: 50px auto 0;
+    text-align: center;
+    padding: 50px 5px;
+}
+
+.reviews-heading span{
+    font-size: 3rem;
+    font-family: $main-font;
+    font-weight: bold;
+}
+
+.reviews-heading h2{
+    font-size: 2.5rem;
+    font-family: $main-font;
+    font-weight: 500;
+}
+
+.reviews-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    gap: 15px;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.review {
+    position: relative;
+    display: inline-block;
+    width: 400px;
+    height: 300px;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    border-radius: 6px;
+    background-color: #ffffff;
+  }
+
+  .review-container--google{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 15px;
+    right: 15px;
+    background-image: url('../assets/google-color.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+ }
+
+  .review-img{
+    width: 55px;
+    height: 55px;
+    margin: 15px auto;
+    background-color: #CCD1D1;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .review-img img{
+    width: 55px;
+    height: 55px;
+  }
+
+  .review-score{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 5px;
+    width: 150px;
+    height: 30px;
+    margin: 10px auto;
+  }
+
+  .review-score span{
+    width: 20px;
+    height: 20px;
+    background-image: url('../assets/yellow_star.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .review p{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-family: $second-font;
+    font-size: 1.3rem;
+    width: 250px;
+    height: 60px;
+  }
+
+  .review-user{
+    position: absolute;
+    bottom: 10px;
+    left: calc(50% - 50px);
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .review-name{
+    width: 100px;
+    height: auto;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .review-date{
+    width: 100px;
+    height: auto;
+    color: #AEB6BF;
+  }
+
+  .footer-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    width: 100%;
+    min-width: 768px;
+    height: 200px;
+    background-color: #000000;
+  }
+
+  .footer-contact{
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100px;
+    padding: 10px;
+    margin: 40px 5px;
+    text-align: center;
+    font-family: $second-font;
+    font-size: 1rem;
+    font-weight: 200;
+    color: #ffffff;
+  }
+
+  .contact-address{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+
+  .contact-phone{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+
+  .contact-email{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .contact-address span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    background-image: url('../assets/address-white.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .contact-phone span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    background-image: url('../assets/phone-white.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .contact-email span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    background-image: url('../assets/email-white.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .footer-social{
+    position: absolute;
+    top: 20px;
+    right: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    margin: 40px 5px;
+  }
+
+  .footer-social--logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    width: 150px;
+    height: 50px;
+  }
+
+  .footer--facebook{
+    width: 70px;
+    height: 70px;
+  }
+
+  .footer--instagram{
+    width: 50px;
+    height: 50px;
+  }
+

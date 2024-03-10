@@ -1,10 +1,40 @@
+.main-hero{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    padding: 0;
+    background-image: url("../assets/herocar.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.main-features{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
 .main-features--container{
 display: flex;
 flex-wrap: wrap;
 flex-direction: row;
-gap: 5px;
-width: 930px;
+justify-content: center;
+gap: 50px;
+width: 100%;
 margin: 0 auto;
+}
+
+.main-permissions{  
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 700px;
+    background-color: #ffffff;
 }
 
 .permissions-container{  
@@ -12,12 +42,57 @@ margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
     gap: 5px;
     top: 150px;
+    left: 0;
     width: 100%;
-    width: 100%;
-    height: auto;
+    height: 330px;
     margin: 0 auto;
-    padding-bottom: 100px;
     background-color: #ffffff;
 }
+
+.mid-hero{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    min-width: 100%;
+    height: 500px;
+    background: #a92a2a;
+    background: -webkit-linear-gradient(0deg, #a92a2a 0%, #000000 100%);
+    background: linear-gradient(0deg, #a92a2a 0%, #000000 100%);
+}
+
+.reviews-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.review {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: 270px;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    border-radius: 6px;
+    background-color: #ffffff;
+  }
+
+.footer-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 768px;
+    height: 200px;
+    background-color: #000000;
+  }
