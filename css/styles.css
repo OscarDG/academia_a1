@@ -17,7 +17,7 @@ header {
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  min-width: 768px;
+  min-width: 720px;
   height: 90px;
   background: #7D0A0A;
   background: -webkit-linear-gradient(38deg, #7d0a0a 0%, #000000 100%);
@@ -50,38 +50,10 @@ header .header-logo {
   bottom: 5px;
 }
 
-.header-nav {
-  position: relative;
-  display: flex;
-  width: 150px;
-  height: 80px;
-  list-style: none;
-}
-
-.header-nav li {
-  margin: 10px 15px;
-}
-
-.header-nav--facebook img {
-  position: absolute;
-  top: 15px;
-  left: 5px;
-  width: 50px;
-  height: 50px;
-}
-
-.header-nav--instagram img {
-  position: absolute;
-  top: 20px;
-  left: 75px;
-  width: 40px;
-  height: 40px;
-}
-
 .main-hero {
   position: relative;
   width: 100%;
-  min-width: 768px;
+  min-width: 720px;
   height: 70vh;
   padding: 0;
   background-image: url("../assets/herocar.jpg");
@@ -113,8 +85,7 @@ header .header-logo {
   display: flex;
   align-items: center;
   width: 250px;
-  height: 45px;
-  padding-left: 15px;
+  height: 60px;
   margin: 0 auto;
   padding-left: 25px;
   background-color: #BF3131;
@@ -138,18 +109,16 @@ header .header-logo {
 .hero-button--arrow {
   width: 20px;
   height: 20px;
-  margin-left: 50px;
-}
-
-.hero-button--arrow img {
-  width: 20px;
-  height: 20px;
+  margin-left: 40px;
+  background-image: url("../assets/arrow_white.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .main-features {
   position: relative;
   width: 100%;
-  min-width: 768px;
+  min-width: 720px;
   height: auto;
   background-color: #ffffff;
   text-align: center;
@@ -254,7 +223,7 @@ header .header-logo {
 .main-vehicules {
   position: relative;
   width: 100%;
-  min-width: 768px;
+  min-width: 720px;
   height: auto;
   background-color: #F8F9F9;
 }
@@ -341,7 +310,7 @@ header .header-logo {
   display: flex;
   justify-content: center;
   width: 100%;
-  min-width: 768px;
+  min-width: 720px;
   height: 500px;
   background: #a92a2a;
   background: -webkit-linear-gradient(0deg, #a92a2a 0%, #000000 100%);
@@ -374,7 +343,7 @@ header .header-logo {
   display: flex;
   justify-content: center;
   width: 100%;
-  min-width: 768px;
+  min-width: 720px;
   height: 1200px;
   background-color: #ffffff;
 }
@@ -488,7 +457,7 @@ header .header-logo {
 .main-reviews {
   position: relative;
   width: 100%;
-  min-width: 768px;
+  min-width: 720px;
   height: 500px;
   background-color: #F8F9F9;
 }
@@ -621,7 +590,7 @@ header .header-logo {
   flex-direction: column;
   align-content: stretch;
   width: 100%;
-  min-width: 768px;
+  min-width: 720px;
   height: 200px;
   background-color: #000000;
 }
@@ -696,7 +665,7 @@ header .header-logo {
 .footer-social {
   position: absolute;
   top: 20px;
-  right: 100px;
+  right: 70px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -704,7 +673,7 @@ header .header-logo {
   width: 200px;
   height: 100px;
   padding: 10px;
-  margin: 40px 5px;
+  margin: 50px 5px;
 }
 
 .footer-social--logos {
@@ -712,7 +681,7 @@ header .header-logo {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 80px;
+  gap: 50px;
   width: 150px;
   height: 50px;
 }
