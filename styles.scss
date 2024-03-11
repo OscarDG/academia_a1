@@ -28,10 +28,52 @@ header{
     min-width: 720px;
     height: 90px;
     background: $mainRed;
-    background: -webkit-linear-gradient(38deg, #7d0a0a 0%, #000000 100%);
-    background: linear-gradient(38deg, #7d0a0a 0%, #000000 100%);
+    background: -webkit-linear-gradient(18deg, #7d0a0a 40%, #000000 100%);
+    background: linear-gradient(18deg, #7d0a0a 40%, #000000 100%);
     box-shadow: 0 2px 8px 0 $black;
     margin: 0px;
+}
+
+.main-nav--container{
+    position: absolute;
+    right: 5px;
+    width: 400px;
+    height: auto;
+    text-align: center;
+}
+
+.main-nav{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    width: 350px;
+    list-style-type: none;
+    font-size: 1.2rem;
+    font-family: $main-font;
+    font-weight: bold;
+}
+
+.nav--items{
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: auto;
+}
+
+.nav--items a{
+    text-decoration: none;
+    color: $lightBeige;
+}
+
+.nav--items span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    background: url('../assets/arrow_white.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .logo-container{
@@ -62,7 +104,7 @@ header .header-logo{
     position: relative;
     width: 100%;
     min-width: 720px;
-    height: 70vh;
+    height: 80vh;
     padding: 0;
     background-image: url("../assets/herocar.jpg");
     background-position: center;
@@ -704,3 +746,21 @@ header .header-logo{
     height: 50px;
   }
 
+  .floating-button{
+    position:fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: $mainRed;
+    border-radius: 8px;
+  }
+
+  .floating-button span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url('../assets/arrow-up-white.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
