@@ -170,9 +170,7 @@ header .header-logo {
 .main-features--title {
   width: 90%;
   font-size: 2.5rem;
-  font-weight: 500;
   font-family: "Nunito", sans-serif;
-  font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
   margin: 100px auto 50px;
@@ -250,15 +248,15 @@ header .header-logo {
   margin-top: 5px;
   padding-bottom: 25px;
   font-size: 1.8rem;
-  line-height: 1.5rem;
+  line-height: 1.8rem;
   font-family: "Poppins", sans-serif;
   color: #BF3131;
 }
 
 .features-card--body {
   width: 90%;
-  font-size: 1.3rem;
-  line-height: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
   margin: 0 auto;
 }
 
@@ -272,7 +270,7 @@ header .header-logo {
 
 .vehicules-title {
   position: absolute;
-  top: 55px;
+  top: 75px;
   left: calc(50% - 110px);
   width: 300px;
   min-width: 280px;
@@ -293,7 +291,7 @@ header .header-logo {
   gap: 30px;
   width: 90%;
   height: auto;
-  padding: 150px 0 90px;
+  padding: 200px 0 90px;
   margin: 0 auto;
 }
 
@@ -301,7 +299,7 @@ header .header-logo {
   display: inline-block;
   width: 300px;
   min-width: 280px;
-  height: 350px;
+  height: 370px;
   min-height: 250px;
   border-radius: 5px;
   background-color: #ffffff;
@@ -317,9 +315,9 @@ header .header-logo {
 
 .vehicule-description {
   position: relative;
-  width: 90% px;
+  width: 80%;
   min-width: 280px;
-  height: 100px;
+  height: 120px;
   min-height: 150px;
   text-align: center;
   margin: 0 auto;
@@ -338,10 +336,9 @@ header .header-logo {
 .vehicule-description--body {
   width: 90%;
   height: auto;
-  min-width: 280px;
   min-height: 50px;
-  padding-top: 15px;
-  font-size: 1.3rem;
+  padding-top: 20px;
+  font-size: 1.5rem;
   font-family: "Poppins", sans-serif;
   line-height: 1.8rem;
   margin: 0 auto;
@@ -449,17 +446,17 @@ header .header-logo {
 }
 
 .description-card--title {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   line-height: 2.5rem;
   font-family: "Nunito", sans-serif;
-  font-weight: bold;
+  font-weight: bolder;
   color: #1C2833;
   margin-bottom: 20px;
   margin-left: 40px;
 }
 
 .description-card--body {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   color: #000000;
@@ -479,9 +476,8 @@ header .header-logo {
   font-weight: bold;
 }
 
-.permissions-more a {
-  text-decoration: none;
-  color: #1C2833;
+.permissions-more:hover {
+  cursor: pointer;
 }
 
 .more--arrow {
@@ -496,43 +492,228 @@ header .header-logo {
   background-repeat: no-repeat;
 }
 
+.float-description.inactive {
+  display: none;
+  position: fixed;
+  top: 100px;
+  width: 60%;
+  max-width: 500px;
+  min-width: 500px;
+  height: 400px;
+  background: rgba(191, 49, 49, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.float-description.active {
+  position: fixed;
+  top: 100px;
+  width: 60%;
+  max-width: 500px;
+  min-width: 500px;
+  height: 400px;
+  background: rgba(191, 49, 49, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.float-description--a2.active {
+  display: flex;
+  position: absolute;
+  left: 15px;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 90%;
+  height: 340px;
+  margin: 0 auto;
+}
+
+.float-description--a2.inactive {
+  display: none;
+  position: absolute;
+  left: 15px;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 90%;
+  height: 340px;
+  margin: 0 auto;
+}
+
+.float-description--b1.active {
+  display: flex;
+  position: absolute;
+  left: 15px;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 90%;
+  height: 340px;
+  margin: 0 auto;
+}
+
+.float-description--b1.inactive {
+  display: none;
+  position: absolute;
+  left: 15px;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 90%;
+  height: 340px;
+  margin: 0 auto;
+}
+
+.float-description--c1.active {
+  display: flex;
+  position: absolute;
+  left: 15px;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 90%;
+  height: 340px;
+  margin: 0 auto;
+}
+
+.float-description--c1.inactive {
+  display: none;
+  position: absolute;
+  left: 15px;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 90%;
+  height: 340px;
+  margin: 0 auto;
+}
+
+.float-description--renew.active {
+  display: flex;
+  position: absolute;
+  left: 15px;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 90%;
+  height: 340px;
+  margin: 0 auto;
+}
+
+.float-description--renew.inactive {
+  display: none;
+  position: absolute;
+  left: 15px;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 90%;
+  height: 340px;
+  margin: 0 auto;
+}
+
+.float--closeButton {
+  display: inline-block;
+  position: fixed;
+  top: 15px;
+  left: 430px;
+  width: 30px;
+  height: 30px;
+  background-image: url("../assets/close-button-white.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.float--title {
+  font-size: 2.5rem;
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 50px;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.float--body {
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.float--body span {
+  font-weight: bold;
+  color: #F8F9F9;
+  margin-right: 50px;
+}
+
+.float-subscription {
+  position: absolute;
+  width: 300px;
+  height: 50px;
+  background-color: #7D0A0A;
+  left: calc(50% - 140px);
+  bottom: 5px;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+a.float-subscription--button {
+  margin: 50px;
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  color: #F8F9F9;
+  text-align: center;
+  text-decoration: none;
+}
+
 .main-reviews {
   position: relative;
   width: 100%;
   min-width: 720px;
-  height: 500px;
+  height: 550px;
   background-color: #F8F9F9;
 }
 
 .reviews-heading {
+  position: absolute;
+  top: 50px;
+  left: calc(50% - 200px);
   width: 400px;
   height: 80px;
-  margin: 50px auto 0;
+  margin: 10px auto 0;
   text-align: center;
-  padding: 50px 5px;
+  padding: 0px 5px;
 }
 
 .reviews-heading span {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: "Nunito", sans-serif;
   font-weight: bold;
 }
 
 .reviews-heading h2 {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   font-family: "Nunito", sans-serif;
   font-weight: 500;
 }
 
 .reviews-container {
   display: flex;
+  position: absolute;
+  top: 140px;
   flex-direction: row;
   justify-content: space-between;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
   gap: 15px;
-  margin-top: 50px;
+  margin-top: 100px;
   width: 100%;
 }
 
@@ -755,4 +936,8 @@ header .header-logo {
   background: url("../assets/arrow-up-white.svg");
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.green-background {
+  background-color: #BF3131;
 }
